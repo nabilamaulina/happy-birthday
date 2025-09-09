@@ -21,6 +21,20 @@
         font-family: 'Arial', sans-serif;
       }
 
+      .instructions {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(255, 255, 255, 0.8); /* semi transparan */
+  color: #333;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  z-index: 20; /* pastikan di atas cake & candles */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
       @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
@@ -202,6 +216,14 @@
     </style>
   </head>
   <body>
+   
+<div class="instructions">
+  1. izinkan chrome merekam suara <br>
+  2. play music<br>
+  3. tap cake memunculkan lilin<br>
+  4. tiup lilin nyaaa
+</div>
+
     <canvas id="confettiCanvas"></canvas>
     <div class="happy-birthday-banner">Happy Birthday Y!!!</div>
     <div class="candle-count-display">
